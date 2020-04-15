@@ -43,6 +43,7 @@ class PriorityQueueTest {
     @ParameterizedTest
     @ValueSource(ints = {-100, 1, 5, 145, 77}) // <- The correct ordered array.  * The wrong answer for lab4
     void test_pq_1 (int arg) {
+        System.out.println("Test1");
         int q = q1.poll();
         assertEquals(q, arg);
     }
@@ -51,6 +52,7 @@ class PriorityQueueTest {
     @ParameterizedTest
     @ValueSource(ints = {-27, -25, 1, 17, 22, 86})
     void test_pq_2 (int arg) {
+        System.out.println("Test2");
         int q = q2.poll();
         assertEquals(q, arg);
     }
@@ -68,6 +70,7 @@ class PriorityQueueTest {
     @ParameterizedTest
     @ValueSource(ints = {-26, -1, 0, 0, 4, 58, 84})
     void test_pq_3 (int arg) {
+        System.out.println("Test3");
         int q = q3.poll();
         assertEquals(q, arg);
     }
@@ -76,6 +79,7 @@ class PriorityQueueTest {
     @ParameterizedTest
     @ValueSource(ints = {-638, -386, -78, 30, 95, 147, 397, 888})
     void test_pq_4 (int arg) {
+        System.out.println("Test4");
         int q = q4.poll();
         assertEquals(q, arg);
     }
@@ -84,6 +88,7 @@ class PriorityQueueTest {
     @ParameterizedTest
     @ValueSource(ints = {-626, -316, -7, 46, 110, 258, 261, 628, 667})
     void test_pq_5 (int arg) {
+        System.out.println("Test5");
         int q = q5.poll();
         assertEquals(q, arg);
     }
