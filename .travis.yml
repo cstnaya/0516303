@@ -5,10 +5,10 @@ jdk:
   - oraclejdk11
 
 install:
-  - mvn install -Dmaven.compiler.target=1.8 -Dmaven.compiler.source=1.8 -DskipTests=true
-  - echo "install"
+  - mvn install -Dmaven.compiler.target=1.8 -Dmaven.compiler.source=1.8 -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - echo "install finished"
   
 script:
-  - mvn test -Dmaven.compiler.target=1.8 -Dmaven.compiler.source=1.8
-  - echo "script"
+  - mvn test -B #-Dmaven.compiler.target=1.8 -Dmaven.compiler.source=1.8
+  - echo "script finished"
 
