@@ -19,6 +19,8 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
          
+
+    <build>
     <plugins>
 	<plugin>
 	         <groupId>org.apache.maven.plugins</groupId>
@@ -51,6 +53,7 @@
          </executions>
          </plugin>
     </plugins>
+    </build>
              
     <groupId>groupId</groupId>
     <artifactId>lab02</artifactId>
