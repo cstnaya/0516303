@@ -41,7 +41,7 @@ class PriorityQueueTest {
 
     @DisplayName("Testcase 1")
     @ParameterizedTest
-    @ValueSource(ints = {-100, 1, 5, 45, 77}) // <- The correct ordered array.
+    @ValueSource(ints = {-100, 1, 5, 145, 77}) // <- The correct ordered array.  * The wrong answer for lab4
     void test_pq_1 (int arg) {
         int q = q1.poll();
         assertEquals(q, arg);
